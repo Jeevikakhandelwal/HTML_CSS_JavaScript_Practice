@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is a Script</h1>
+    <script>
+        //alert in in-browser JavaScript - Does not return anything
+        // alert("This is a script");
+        // let a = alert("This is a script");
+        // console.log(a);
+
+        //prompt() in JS
+        // let name=prompt("What is your name?", "Guest");
+        // console.log(name);
+
+        // confirm() Js
+        // let deletePost= confirm("do you really what to delete this post?");
+        // // console.log(deletePost)
+
+        // if(deletePost){
+
+        //     //code to delete post
+        //     console.log("Your post has been deleted sucessfully")
+        // }else{
+
+        //     //code to cancel deletion of the post
+        //     console.log("your post has not been deleted");
+        // }
+
+        // Assignment
+
+        let name = prompt("Enter your name", "guest");
+        console.log(name);
+        let age = prompt("Enter your age");
+        if (age > 18) {
+            console.log("Your are invited in club");
+            let confrimAge = confirm("Check again your age is " + age + "?");
+            if (confrimAge) {
+                console.log("Valid age");
+                alert("Welcome to the club " + name);
+            }
+            else {
+                console.log("Invalid age");
+            }
+
+        }
+        else {
+            console.log("Your are not invited in club");
+        }
+
+    </script>
+</body>
+
+</html>

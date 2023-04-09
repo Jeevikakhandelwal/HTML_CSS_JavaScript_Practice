@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdvancedSelectors</title>
+    <style>
+        /* p{
+            color: blueviolet;
+        } */
+        /* div p{
+            color: chartreuse;
+        } */
+        /* .container p{
+            color: crimson;
+        } */
+
+        /* .item p{
+            color: darkcyan;
+        } */
+
+        /* div li p{
+            color: darkolivegreen;
+        } */
+
+        /* div > p{
+            color: antiquewhite;
+        } */
+
+        div + p{
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <ul>
+           <li><p>This is a Paragraph</p> </li>
+            </ul>
+        </div>
+        <p>This is a another paragraph</p>
+    </div>
+    <p>This is a outer paragraph</p>
+</body>
+
+</html>

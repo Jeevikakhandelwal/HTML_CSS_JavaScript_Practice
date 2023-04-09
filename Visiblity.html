@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity</title>
+    <style>
+        .text-1{
+            border: 2px solid black;
+            background-color: green;
+            width: 54px;
+            height: 54px;
+        }
+        .text-2{
+            border: 2px solid black;
+            background-color: red;
+            width: 54px;
+            height: 54px;
+            display: none;/*Display none is used to remove that box from that place*/
+            
+        }
+        .text-3{
+            border: 2px solid black;
+            background-color:blue;
+            width: 54px;
+            height: 54px;
+          position: relative;
+          top: 5px;
+          z-index: 50;
+        }
+        .text-4{
+            border: 2px solid black;
+            background-color:yellow;
+            width: 54px;
+            height: 54px;
+            position: relative;
+            top: 10px;
+            z-index: 50;
+        }
+        .text-5{
+            border: 2px solid black;
+            background-color: lavender;
+            width: 54px;
+            height: 54px;
+        }
+        .text-6{
+            border: 2px solid black;
+            background-color:rosybrown;
+            width: 54px;
+            height: 54px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-1">1</div>
+    <div class="text-2">2</div>
+    <div class="text-3">3</div>
+    <div class="text-4">4</div>
+    <div class="text-5">5</div>
+    <div class="text-6">6</div>
+</body>
+</html>

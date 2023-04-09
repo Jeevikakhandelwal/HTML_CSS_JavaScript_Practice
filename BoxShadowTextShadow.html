@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .card h1{
+            /* text-shadow: 3px 4px red; */
+            text-shadow: 3px 4px 2px grey;
+        } 
+        .card{
+            border: 2px solid red;
+            padding:23px 12px ;
+            margin: 7px 8px;
+            background-color: darkslategray;
+            /* box-shadow: 10px 15px grey; */
+            /* box-shadow: -10px -15px grey; */
+            box-shadow: 7px 5px 10px grey;/*blur radius*/
+            box-shadow: 10px 15px 10px 34px grey;/*spread radius*/
+            box-shadow: inset 3px 4px grey;
+            box-shadow: 3px 4px green, 3px 4px grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>Card1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur minus sint facere saepe, suscipit sed commodi! Corporis, vitae, voluptatibus exercitationem quos voluptates labore doloremque dolorem perspiciatis ad qui velit iure omnis magnam minima!</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>Card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum quibusdam ullam laboriosam saepe? Dolores soluta nihil earum maxime deleniti qui iure veniam ut dolorem molestias libero aliquid, repellendus voluptates laborum culpa rerum. Natus?</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>Card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nihil facere nobis doloribus laudantium earum ab? Nulla aspernatur voluptatem, molestias deserunt rerum quam et quidem officia sapiente repudiandae quos molestiae repellat, aliquam aperiam numquam!</p>
+        </div>
+    </div>
+</body>
+</html>

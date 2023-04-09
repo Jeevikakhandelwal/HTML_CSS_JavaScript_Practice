@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        #btn{
+            border: 2px solid black;
+            border-radius: 9px;
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MouseEvents</h1>
+        <p id="param">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta accusantium quod laborum quo
+            error dolores, optio inventore, totam alias quam qui adipisci sit illo saepe nobis corrupti porro
+            dignissimos animi libero voluptatem vitae ipsa?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Hide/Show</button>
+    <script>
+      let  param= document.getElementById('param');
+      param.addEventListener('mouseover', function run(){
+        alert("Mouse Inside");
+      });
+
+      param= document.getElementById('param');
+      param.addEventListener('mouseout', function out(){
+        alert("Mouse outside");
+      });
+
+       function toggleHide(){
+            btn= document.getElementById('btn');
+            param= document.getElementById('param');
+            if(param.style.display!='none'){
+                param.style.display="none";
+            }else{
+                param.style.display="block";
+            }
+
+       }
+    </script>
+</body>
+
+</html>

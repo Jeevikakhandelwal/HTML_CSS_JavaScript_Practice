@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            border: 1px solid green;
+            background-color: blueviolet;
+            margin: 3px 3px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* animation-name: jeevika; */
+            animation-name: jeevika1;
+            animation-duration: 8s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+        }
+        @keyframes jeevika1 {
+            0%{
+                top: 0px;
+                left:0px;
+            }
+            25%{
+                top:250px;
+                left:0px;
+            }
+            75%{
+                top:250px;
+                top:250px;
+            }
+            100%{
+                top:0px;
+                left: 250px;
+            }
+        }
+        @keyframes jeevika {
+            from{
+                width: 200px;
+            }to{
+                width: 1400px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Card1</div>
+        <div class="box">Card2</div>
+        <div class="box">Card3</div>
+    </div>
+</body>
+</html>

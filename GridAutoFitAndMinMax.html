@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofix And MinMax</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'menu  body body body'
+                'footer footer footer footer';
+            grid-gap: 1rem;
+        }
+
+        #body .item img {
+            height: 30rem;
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: lavender;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #menu {
+            grid-area: menu;
+        }
+
+        #body {
+            grid-area: body;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar">
+            <div class="item">
+                <p>Home About Us Services Contact Us</p>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="item">
+               <div>Home</div>
+                <div> About Us</div>
+                <div>Services</div>
+                <div>Contact Us</div>    
+                </p>
+            </div>
+        </div>
+        <div id="body">
+            <div class="item">
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sapiente laudantium optio
+                    voluptatem, maiores inventore explicabo! Maiores omnis ipsum eos, est, porro modi facere impedit,
+                    saepe inventore corporis distinctio numquam?</p> -->
+                <img src="img/MyImage.jpeg" alt="">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sapiente laudantium optio
+                    inventore explicabo! Maiores omnis ipsum eos, est, porro modi facere impedit,
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

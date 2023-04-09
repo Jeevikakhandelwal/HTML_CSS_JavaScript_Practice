@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables And Custome Properties</title>
+    <style>
+        :root {
+            --primary-color: blueviolet;
+            --danger-color: red;
+        }
+
+        .box {
+            /* --box-color: blueviolet;It will act as a local variable so we define this variable in root to act as publi val=riable */
+            width: 200px;
+            height: 200px;
+            background-color: var( --primary-color);
+            box-shadow: 3px 3px var( --danger-color);
+            border: 2px solid black;
+            margin: 4px 4px;
+            
+        }
+
+        .container {
+            display: flex;
+            background-color: var( --primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

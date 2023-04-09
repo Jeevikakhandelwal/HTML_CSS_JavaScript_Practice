@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Pseudo Selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/random/?city,night') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index:-1;
+            opacity: 0.3;
+        }
+        .item{
+            display: inline-block;
+            list-style: none;
+            padding: 3px 17px;
+            margin: 4px 4px;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            text-align: center;
+            padding: 3px 3px;
+            margin: 9px 225px;
+        }
+        section::after{
+            content: "All is well";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Service</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quasi quisquam, sed ea repudiandae nam dolore sit, fuga dolor debitis odio eius vero. Saepe nisi libero velit doloremque nihil asperiores dolor odio perspiciatis repellendus accusamus error nam, quod cumque incidunt?</p>
+        </section>
+    </header>
+</body>
+</html>
